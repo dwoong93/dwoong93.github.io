@@ -38,3 +38,7 @@ Plain record of every change to this site, so it's easy to trace if something br
 - **Follow-up:** ride history caption shortened to "Ride history page." Claude artifact version 66.
 - **Follow-up:** Grab migration timeline — centred "SEP 2026" and "Handover" under the last milestone dot, like the others. Claude artifact version 67.
 - **Follow-up:** PulseSync case — added that Daryl designed the graphics for the Gym Tonic training guide. Claude artifact version 68.
+
+## 2026-11-19 — Gym Tonic training guide materials
+- **Branch:** `add-theme-toggle` (same pull request #2)
+- **Changed:** `index.html` — PulseSync case now shows Daryl's training-guide work in a tabbed viewer: tablet screens he redrew in Illustrator, stills from the how-to videos he filmed with a trainer, and two improved guide pages. Bullet reworded to match. Also fixed the tab script so each tab group only switches its own panels. Claude artifact version 69.
