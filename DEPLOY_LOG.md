@@ -23,3 +23,4 @@ Plain record of every change to this site, so it's easy to trace if something br
 - **Branch:** `add-theme-toggle` (same pull request #2)
 - **Changed:** `index.html` — added Daryl's profile photo next to his name, in a circle with a green border. It's set as a background (not an image element) with right-click and long-press saving turned off, so it can't be opened in a new tab from the page.
 - **Source:** Claude artifact version 59.
+- **Follow-up:** re-centred the photo inside the circle (it was taken slightly off-centre). Claude artifact version 60.
