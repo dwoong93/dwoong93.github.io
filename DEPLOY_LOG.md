@@ -51,3 +51,9 @@ Plain record of every change to this site, so it's easy to trace if something br
 - **Branch:** `move-theme-toggle` (merge into `main` only after Daryl approves)
 - **Changed:** `index.html` — the light/dark switch moved from the top-right corner to sit right after "Daryl Woong", and now shows a label ("Light mode" / "Dark mode") next to the icon so it's easier to notice. Claude artifact version 74.
 - **Follow-up:** replaced the labelled button with a sliding toggle switch (sun on the left, moon on the right, a round knob that slides between them), no text. Claude artifact version 75.
+
+## 2026-11-19 — Visitor stats (GoatCounter)
+- **Branch:** `add-analytics` (merge into `main` only after Daryl approves)
+- **Changed:** `index.html` — added the GoatCounter script at the very end of the page. Stats are at https://dwoong.goatcounter.com (visits, referrer, rough country and device; no cookies, no names).
+- **Per-application links:** each resume uses its own link, e.g. `https://dwoong93.github.io/?ref=armorbearer`. GoatCounter reads the `?ref=` value and shows it under "Top referrers", so you can see which company's resume link was opened.
+- **Important for future updates:** this script is only in the GitHub version (the Claude artifact blocks outside scripts). When `index.html` is replaced with a new artifact export, re-append the two lines at the bottom of this file's current version.
