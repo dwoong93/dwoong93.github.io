@@ -29,3 +29,7 @@ Plain record of every change to this site, so it's easy to trace if something br
 ## 2026-11-19 — Protect all images
 - **Branch:** `add-theme-toggle` (same pull request #2)
 - **Changed:** `index.html` — turned off right-click menus, dragging and phone long-press saving on every screenshot, the enlarged image view and the profile photo, so "Open image in new tab" and "Save image" aren't offered. Clicking to enlarge still works. Claude artifact version 62.
+
+## 2026-11-19 — WeRide ride history screen
+- **Branch:** `add-theme-toggle` (same pull request #2)
+- **Changed:** `index.html` — cropped the ride history screen in the wallet payments case to show only the recorded trip (10 March 2025, completed), dropping the cancelled-and-refunded trip. Addresses stay blurred. Claude artifact version 63.
