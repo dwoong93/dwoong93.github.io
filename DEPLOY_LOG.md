@@ -50,3 +50,4 @@ Plain record of every change to this site, so it's easy to trace if something br
 ## 2026-11-19 — Theme switch moved next to the name
 - **Branch:** `move-theme-toggle` (merge into `main` only after Daryl approves)
 - **Changed:** `index.html` — the light/dark switch moved from the top-right corner to sit right after "Daryl Woong", and now shows a label ("Light mode" / "Dark mode") next to the icon so it's easier to notice. Claude artifact version 74.
+- **Follow-up:** replaced the labelled button with a sliding toggle switch (sun on the left, moon on the right, a round knob that slides between them), no text. Claude artifact version 75.
