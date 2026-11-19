@@ -25,3 +25,7 @@ Plain record of every change to this site, so it's easy to trace if something br
 - **Source:** Claude artifact version 59.
 - **Follow-up:** re-centred the photo inside the circle (it was taken slightly off-centre). Claude artifact version 60.
 - **Follow-up:** nudged the photo half a step back to the left, per Daryl. Claude artifact version 61.
+
+## 2026-11-19 — Protect all images
+- **Branch:** `add-theme-toggle` (same pull request #2)
+- **Changed:** `index.html` — turned off right-click menus, dragging and phone long-press saving on every screenshot, the enlarged image view and the profile photo, so "Open image in new tab" and "Save image" aren't offered. Clicking to enlarge still works. Claude artifact version 62.
