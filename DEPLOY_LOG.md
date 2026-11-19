@@ -46,3 +46,8 @@ Plain record of every change to this site, so it's easy to trace if something br
 - **Follow-up:** "Sites" tab — added a third commissioned site, and blurred every face in all three site photos (clients and trainers). Claude artifact version 71.
 - **Follow-up:** stronger, wider blur on the face of the trainer in purple in the third site photo. Claude artifact version 72.
 - **Follow-up:** renamed the "More highlights" section to "Beyond the brief" (heading and contents list). Claude artifact version 73.
+
+## 2026-11-19 — Theme switch moved next to the name
+- **Branch:** `move-theme-toggle` (merge into `main` only after Daryl approves)
+- **Changed:** `index.html` — the light/dark switch moved from the top-right corner to sit right after "Daryl Woong", and now shows a label ("Light mode" / "Dark mode") next to the icon so it's easier to notice. Claude artifact version 74.
+- **Follow-up:** replaced the labelled button with a sliding toggle switch (sun on the left, moon on the right, a round knob that slides between them), no text. Claude artifact version 75.
