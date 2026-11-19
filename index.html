@@ -184,9 +184,10 @@ h2 .when { display: block; font-family: var(--font-mono); font-size: 0.8rem; fon
 }
 .mono-l { fill: var(--ink); font-family: var(--font-mono); font-size: 12px; font-weight: 500; pointer-events: none; }
 .mono-s { fill: var(--muted); font-family: var(--font-mono); font-size: 11px; pointer-events: none; }
-.theme-toggle { position: fixed; z-index: 40; top: calc(env(safe-area-inset-top, 0px) + 14px); right: max(14px, calc(env(safe-area-inset-right, 0px) + 14px)); width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--line); background: var(--surface); color: var(--ink); display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 4px 14px rgba(0,0,0,.12); transition: border-color .2s ease, transform .2s ease; }
-.theme-toggle:hover { border-color: var(--accent); transform: rotate(-12deg); }
-.theme-toggle svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; }
+.name-row { display: flex; align-items: center; flex-wrap: wrap; gap: 10px 16px; }
+.theme-toggle { display: inline-flex; align-items: center; gap: 8px; padding: 7px 14px 7px 10px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); font: 500 0.85rem var(--font-body); cursor: pointer; transition: border-color .2s ease, background .2s ease; }
+.theme-toggle:hover { border-color: var(--accent); background: var(--accent-soft); }
+.theme-toggle svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; }
 .theme-toggle .i-moon { fill: currentColor; stroke: none; }
 .theme-toggle .i-sun { display: none; }
 :root[data-theme="dark"] .theme-toggle .i-sun { display: block; } :root[data-theme="dark"] .theme-toggle .i-moon { display: none; }
@@ -206,10 +207,6 @@ footer { font-size: 0.85rem; color: var(--muted); border-top: 1px solid var(--li
 @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
 </style>
 
-<button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to light mode" title="Switch theme">
-  <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2.5M12 19v2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M2.5 12H5M19 12h2.5M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"/></svg>
-  <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
-</button>
 <div class="wrap">
 
 <header>
@@ -217,7 +214,14 @@ footer { font-size: 0.85rem; color: var(--muted); border-top: 1px solid var(--li
     <div class="avatar" role="img" aria-label="Photo of Daryl Woong" oncontextmenu="return false"></div>
     <div class="id-text">
       <span class="eyebrow">PRODUCT PORTFOLIO · SINGAPORE</span>
-      <h1>Daryl Woong</h1>
+      <div class="name-row">
+        <h1>Daryl Woong</h1>
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to light mode">
+        <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2.5M12 19v2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M2.5 12H5M19 12h2.5M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"/></svg>
+        <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+        <span class="tt-label" id="theme-label">Light mode</span>
+      </button>
+      </div>
     </div>
   </div>
   <p class="lede">Product manager who designs platform flows end to end, from API and business logic to the screen a traveller taps. Four and a half years running Splyt's cross-border ride platform across Korea, China, Japan, Southeast Asia, Europe and the Middle East. Now building with AI agents.</p>
@@ -821,7 +825,7 @@ footer { font-size: 0.85rem; color: var(--muted); border-top: 1px solid var(--li
   var mq = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
   try { var saved = localStorage.getItem('portfolio-theme'); if (saved === 'light' || saved === 'dark') root.setAttribute('data-theme', saved); } catch (e) {}
   function current() { var t = root.getAttribute('data-theme'); if (t === 'light' || t === 'dark') return t; return mq && mq.matches ? 'dark' : 'light'; }
-  function label() { btn.setAttribute('aria-label', current() === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'); }
+  function label() { var d = current() === 'dark'; btn.setAttribute('aria-label', d ? 'Switch to light mode' : 'Switch to dark mode'); var t = document.getElementById('theme-label'); if (t) t.textContent = d ? 'Light mode' : 'Dark mode'; }
   btn.addEventListener('click', function () {
     var next = current() === 'dark' ? 'light' : 'dark';
     root.setAttribute('data-theme', next);
