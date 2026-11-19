@@ -57,3 +57,9 @@ Plain record of every change to this site, so it's easy to trace if something br
 - **Changed:** `index.html` — added the GoatCounter script at the very end of the page. Stats are at https://dwoong.goatcounter.com (visits, referrer, rough country and device; no cookies, no names).
 - **Per-application links:** each resume uses its own link, e.g. `https://dwoong93.github.io/?ref=armorbearer`. GoatCounter reads the `?ref=` value and shows it under "Top referrers", so you can see which company's resume link was opened.
 - **Important for future updates:** this script is only in the GitHub version (the Claude artifact blocks outside scripts). When `index.html` is replaced with a new artifact export, re-append the two lines at the bottom of this file's current version.
+
+## 2026-11-19 — Link previews (LinkedIn, WhatsApp, etc.)
+- **Branch:** `add-link-preview` (merge into `main` only after Daryl approves)
+- **Changed:** `index.html` — wrapped the page in a full HTML document (`<!doctype>`, `<head>`, `<body>`) with a title, description and Open Graph / Twitter preview tags, plus the small base styles the Claude artifact host normally adds. LinkedIn couldn't build a preview before because the file had no `<head>`.
+- **Added:** `og-image.png` (1200×630) — the preview card: photo, name, one-line pitch, tags.
+- **Important for future updates:** when replacing `index.html` with a new artifact export, keep this `<head>` block at the top and the GoatCounter lines at the bottom.
