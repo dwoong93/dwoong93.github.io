@@ -63,3 +63,12 @@ Plain record of every change to this site, so it's easy to trace if something br
 - **Changed:** `index.html` — wrapped the page in a full HTML document (`<!doctype>`, `<head>`, `<body>`) with a title, description and Open Graph / Twitter preview tags, plus the small base styles the Claude artifact host normally adds. LinkedIn couldn't build a preview before because the file had no `<head>`.
 - **Added:** `og-image.png` (1200×630) — the preview card: photo, name, one-line pitch, tags.
 - **Important for future updates:** when replacing `index.html` with a new artifact export, keep this `<head>` block at the top and the GoatCounter lines at the bottom.
+
+## 2026-11-19 — Page made small enough for LinkedIn
+- **Branch:** `shrink-page` (merge into `main` only after Daryl approves)
+- **Why:** LinkedIn Post Inspector refused to read the page: "larger than our threshold, maximum 3,145,728 bytes". The page was ~4.5 MB because every screenshot was embedded inside the HTML.
+- **Changed:** all 37 images moved out of `index.html` into `images/` as separate files; `index.html` is now ~90 KB. Images load lazily as you scroll. Nothing looks different.
+- **New build process (use this for every future update):**
+  1. Export the latest Claude artifact to `tools/artifact-export.html` (not committed; it's in `.gitignore`).
+  2. Run `python3 tools/build.py tools/artifact-export.html`. It extracts images into `images/`, removes unused ones, adds the `<head>` from `tools/head.html` (title, preview tags, base styles) and the GoatCounter script from `tools/tail.html`, and prints what it did.
+  3. Commit on a new branch, open a pull request, and merge only after Daryl approves.
