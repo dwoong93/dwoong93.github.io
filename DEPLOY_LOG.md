@@ -18,3 +18,8 @@ Plain record of every change to this site, so it's easy to trace if something br
 - **Branch:** `add-theme-toggle` (added to the same pull request, since both change `index.html`)
 - **Changed:** `index.html` — redrew the "simplified payment flow" diagram in the wallet payments case so the arrows to "Auto refund" and "Top-up charge" have room and run straight into their boxes; moved the "if top-up fails" label so it isn't cut off.
 - **Source:** Claude artifact version 58.
+
+## 2026-11-19 — Profile photo
+- **Branch:** `add-theme-toggle` (same pull request #2)
+- **Changed:** `index.html` — added Daryl's profile photo next to his name, in a circle with a green border. It's set as a background (not an image element) with right-click and long-press saving turned off, so it can't be opened in a new tab from the page.
+- **Source:** Claude artifact version 59.
