@@ -45,3 +45,4 @@ Plain record of every change to this site, so it's easy to trace if something br
 - **Follow-up:** PulseSync case — added a "Sites" tab with two photos of Gym Tonic centres Daryl commissioned (credited "Photo: Gym Tonic"), and a bullet: oversaw machine deliveries, then set up and configured the tablets. Claude artifact version 70.
 - **Follow-up:** "Sites" tab — added a third commissioned site, and blurred every face in all three site photos (clients and trainers). Claude artifact version 71.
 - **Follow-up:** stronger, wider blur on the face of the trainer in purple in the third site photo. Claude artifact version 72.
+- **Follow-up:** renamed the "More highlights" section to "Beyond the brief" (heading and contents list). Claude artifact version 73.
