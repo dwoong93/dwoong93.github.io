@@ -35,3 +35,4 @@ Plain record of every change to this site, so it's easy to trace if something br
 - **Changed:** `index.html` — cropped the ride history screen in the wallet payments case to show only the recorded trip (10 March 2025, completed), dropping the cancelled-and-refunded trip. Addresses stay blurred. Claude artifact version 63.
 - **Follow-up (Daryl's request):** restored the full ride history screen and unblurred the 10 March 20:00 trip, so its pickup (258B Punggol Field) and drop-off (Ark Bloc) addresses are now visible. The 11:18 trip stays blurred. Claude artifact version 64.
 - **Follow-up (Daryl's request):** in the ride history screen, every trip is now visible (dates, statuses, pins) and only the address and place-name lines are blurred, including for the 10 March 20:00 trip. Claude artifact version 65.
+- **Follow-up:** ride history caption shortened to "Ride history page." Claude artifact version 66.
