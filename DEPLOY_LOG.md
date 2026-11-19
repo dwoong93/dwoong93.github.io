@@ -37,3 +37,4 @@ Plain record of every change to this site, so it's easy to trace if something br
 - **Follow-up (Daryl's request):** in the ride history screen, every trip is now visible (dates, statuses, pins) and only the address and place-name lines are blurred, including for the 10 March 20:00 trip. Claude artifact version 65.
 - **Follow-up:** ride history caption shortened to "Ride history page." Claude artifact version 66.
 - **Follow-up:** Grab migration timeline — centred "SEP 2026" and "Handover" under the last milestone dot, like the others. Claude artifact version 67.
+- **Follow-up:** PulseSync case — added that Daryl designed the graphics for the Gym Tonic training guide. Claude artifact version 68.
