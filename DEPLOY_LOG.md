@@ -79,3 +79,9 @@ Plain record of every change to this site, so it's easy to trace if something br
 - Changes: case title and index entry now "Supporting Heycars' pivot to resell Splyt's supply"; facts strip label now "Heycars' monthly requests, after a pivot I supported". Outcome text already credited Heycars.
 - Build: python3 tools/build.py tools/artifact-export.html (37 images, index.html 0.09 MB)
 - Claude artifact updated to v76 in the same change.
+
+## 2026-11-20: Gold set marked as in progress
+- Branch: fix/gold-set-in-progress
+- Why: Daryl confirmed (22:12 SGT) the 50-exercise gold set is still being written; the page said it was done.
+- Change: Exercise Log "Evals" bullet now reads "wrote the evaluation spec; now writing a 50-exercise gold set, with scoring to follow."
+- Build: python3 tools/build.py tools/artifact-export.html. Claude artifact updated to v77.
