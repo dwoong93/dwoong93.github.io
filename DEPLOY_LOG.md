@@ -72,3 +72,10 @@ Plain record of every change to this site, so it's easy to trace if something br
   1. Export the latest Claude artifact to `tools/artifact-export.html` (not committed; it's in `.gitignore`).
   2. Run `python3 tools/build.py tools/artifact-export.html`. It extracts images into `images/`, removes unused ones, adds the `<head>` from `tools/head.html` (title, preview tags, base styles) and the GoatCounter script from `tools/tail.html`, and prints what it did.
   3. Commit on a new branch, open a pull request, and merge only after Daryl approves.
+
+## 2026-11-20: Credit Heycars for its growth
+- Branch: fix/credit-heycars-growth
+- Why: Heycars' growth (~500 to ~400k monthly requests) was Heycars' doing; Daryl supported the pivot. Approved by Daryl 16:37 SGT.
+- Changes: case title and index entry now "Supporting Heycars' pivot to resell Splyt's supply"; facts strip label now "Heycars' monthly requests, after a pivot I supported". Outcome text already credited Heycars.
+- Build: python3 tools/build.py tools/artifact-export.html (37 images, index.html 0.09 MB)
+- Claude artifact updated to v76 in the same change.
